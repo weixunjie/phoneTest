@@ -1,0 +1,1168 @@
+2019-06-25 09:45:35.993 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 3500 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 09:45:35.995 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 09:45:36.053 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Jun 25 09:45:36 CST 2019]; root of context hierarchy
+2019-06-25 09:45:37.576 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 09:45:37.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 09:45:37.591 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 09:45:37.591 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 09:45:37.605 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 09:45:37.710 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 09:45:37.710 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1657 ms
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 09:45:38.191 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 09:45:38.292 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 09:45:38.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Jun 25 09:45:36 CST 2019]; root of context hierarchy
+2019-06-25 09:45:38.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 09:45:38.475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 09:45:38.476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 09:45:38.489 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 09:45:38.489 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 09:45:38.509 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 09:45:38.654 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 09:45:38.658 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 09:45:38.659 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 09:45:38.659 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 09:45:38.693 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 09:45:38.702 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 09:45:38.737 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 09:45:38.758 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 09:45:38.761 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 3.658 seconds (JVM running for 4.457)
+2019-06-25 09:46:19.272 [http-nio-9002-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 09:46:19.272 [http-nio-9002-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 09:46:19.281 [http-nio-9002-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2019-06-25 09:46:19.449 [http-nio-9002-exec-2] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll] with root cause
+java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.arcsoft.face.FaceEngine.<init>(FaceEngine.java:134)
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:36)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 09:49:21.535 [http-nio-9002-exec-4] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll] with root cause
+java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.arcsoft.face.FaceEngine.<init>(FaceEngine.java:134)
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:36)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 09:49:23.473 [http-nio-9002-exec-7] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll] with root cause
+java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.arcsoft.face.FaceEngine.<init>(FaceEngine.java:134)
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:36)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 09:49:24.316 [http-nio-9002-exec-6] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll] with root cause
+java.lang.UnsatisfiedLinkError: Can't load library: d:\arcsoft-lib\libarcsoft_face.dll
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.arcsoft.face.FaceEngine.<init>(FaceEngine.java:134)
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:36)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 09:49:27.530 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 09:49:27.530 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Jun 25 09:45:36 CST 2019]; root of context hierarchy
+2019-06-25 09:49:27.532 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2019-06-25 10:36:56.087 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 4652 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 10:36:56.089 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 10:36:56.114 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f5ac9e4: startup date [Tue Jun 25 10:36:56 CST 2019]; root of context hierarchy
+2019-06-25 10:36:56.791 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 10:36:56.797 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 10:36:56.801 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 10:36:56.801 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 10:36:56.803 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 10:36:56.840 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 10:36:56.841 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 727 ms
+2019-06-25 10:36:57.104 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 10:36:57.105 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 10:36:57.105 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 10:36:57.105 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 10:36:57.105 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 10:36:57.105 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 10:36:57.105 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 10:36:57.160 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 10:36:57.242 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f5ac9e4: startup date [Tue Jun 25 10:36:56 CST 2019]; root of context hierarchy
+2019-06-25 10:36:57.269 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 10:36:57.270 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 10:36:57.271 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 10:36:57.285 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 10:36:57.285 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 10:36:57.305 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 10:36:57.414 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 10:36:57.419 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 10:36:57.419 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 10:36:57.420 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 10:36:57.443 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 10:36:57.453 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 10:36:57.458 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 10:36:57.464 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 10:36:57.466 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 1.56 seconds (JVM running for 2.012)
+2019-06-25 10:37:00.339 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 10:37:00.339 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 10:37:00.345 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2019-06-25 10:37:01.368 [http-nio-9002-exec-3] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.UnsatisfiedLinkError: Expecting an absolute path of the library: /opt/lib\libarcsoft_face.dll] with root cause
+java.lang.UnsatisfiedLinkError: Expecting an absolute path of the library: /opt/lib\libarcsoft_face.dll
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.arcsoft.face.FaceEngine.<init>(FaceEngine.java:134)
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:36)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 10:37:08.048 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 10:37:08.049 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f5ac9e4: startup date [Tue Jun 25 10:36:56 CST 2019]; root of context hierarchy
+2019-06-25 10:37:08.050 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2019-06-25 11:10:28.942 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 14748 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 11:10:28.979 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 11:10:29.019 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Tue Jun 25 11:10:29 CST 2019]; root of context hierarchy
+2019-06-25 11:10:34.357 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 11:10:34.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 11:10:34.366 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 11:10:34.366 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 11:10:34.369 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 11:10:34.861 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 11:10:34.861 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 5842 ms
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 11:10:39.365 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 11:10:39.652 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:10:39.919 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Tue Jun 25 11:10:29 CST 2019]; root of context hierarchy
+2019-06-25 11:10:39.953 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:10:39.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 11:10:39.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 11:10:39.969 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:10:39.969 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:10:40.022 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 11:10:40.218 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 11:10:40.230 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:10:40.231 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:10:40.231 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 11:10:40.261 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 11:10:40.271 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 11:10:40.365 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 11:10:40.395 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 11:10:40.401 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 11.645 seconds (JVM running for 12.128)
+2019-06-25 11:10:45.032 [http-nio-9002-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 11:10:45.033 [http-nio-9002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 11:10:45.063 [http-nio-9002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-06-25 11:11:03.421 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 11:11:03.421 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Tue Jun 25 11:10:29 CST 2019]; root of context hierarchy
+2019-06-25 11:11:03.435 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2019-06-25 11:11:12.390 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 13432 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 11:11:12.393 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 11:11:12.441 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e8b7643: startup date [Tue Jun 25 11:11:12 CST 2019]; root of context hierarchy
+2019-06-25 11:11:13.596 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 11:11:13.633 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 11:11:13.644 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 11:11:13.644 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 11:11:13.653 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 11:11:13.779 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 11:11:13.779 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1338 ms
+2019-06-25 11:11:14.209 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 11:11:14.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 11:11:14.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 11:11:14.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 11:11:14.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 11:11:14.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 11:11:14.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 11:11:14.291 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:11:14.424 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e8b7643: startup date [Tue Jun 25 11:11:12 CST 2019]; root of context hierarchy
+2019-06-25 11:11:14.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:11:14.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 11:11:14.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 11:11:14.484 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:11:14.484 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:11:14.515 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 11:11:14.759 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 11:11:14.767 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:11:14.768 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:11:14.768 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 11:11:14.804 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 11:11:14.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 11:11:14.828 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 11:11:14.837 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 11:11:14.839 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 2.673 seconds (JVM running for 4.466)
+2019-06-25 11:11:17.258 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 11:11:17.258 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 11:11:17.267 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2019-06-25 11:12:00.977 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 11:12:00.978 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e8b7643: startup date [Tue Jun 25 11:11:12 CST 2019]; root of context hierarchy
+2019-06-25 11:12:00.988 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2019-06-25 11:12:09.570 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 15616 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 11:12:09.578 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 11:12:09.600 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6ef134: startup date [Tue Jun 25 11:12:09 CST 2019]; root of context hierarchy
+2019-06-25 11:12:10.554 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 11:12:10.578 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 11:12:10.585 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 11:12:10.585 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 11:12:10.591 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 11:12:10.715 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 11:12:10.715 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1115 ms
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 11:12:11.117 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 11:12:11.260 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:12:11.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6ef134: startup date [Tue Jun 25 11:12:09 CST 2019]; root of context hierarchy
+2019-06-25 11:12:11.446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:12:11.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 11:12:11.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 11:12:11.470 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:12:11.470 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 11:12:11.502 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 11:12:11.699 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 11:12:11.707 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:12:11.708 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 11:12:11.708 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 11:12:11.744 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 11:12:11.755 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 11:12:11.808 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 11:12:11.821 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 11:12:11.824 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 2.481 seconds (JVM running for 3.424)
+2019-06-25 11:12:13.997 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 11:12:13.997 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 11:12:14.006 [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2019-06-25 11:21:27.336 [http-nio-9002-exec-7] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:69)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 11:26:49.316 [http-nio-9002-exec-5] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token ")", delete this token
+] with root cause
+java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token ")", delete this token
+
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:67)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 11:27:01.461 [http-nio-9002-exec-8] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token ")", delete this token
+] with root cause
+java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token ")", delete this token
+
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:67)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 11:28:30.663 [http-nio-9002-exec-2] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:78)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 11:50:30.916 [http-nio-9002-exec-3] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:78)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 12:04:47.247 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 14300 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 12:04:47.248 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 12:04:47.286 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Tue Jun 25 12:04:47 CST 2019]; root of context hierarchy
+2019-06-25 12:04:48.509 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 12:04:48.518 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 12:04:48.522 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 12:04:48.522 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 12:04:48.530 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 12:04:48.587 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 12:04:48.587 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1301 ms
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 12:04:48.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 12:04:49.027 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 12:04:49.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Tue Jun 25 12:04:47 CST 2019]; root of context hierarchy
+2019-06-25 12:04:49.166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 12:04:49.167 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 12:04:49.168 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 12:04:49.181 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 12:04:49.181 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 12:04:49.200 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 12:04:49.338 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 12:04:49.343 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 12:04:49.344 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 12:04:49.344 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 12:04:49.377 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 12:04:49.393 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 12:04:49.413 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 12:04:49.420 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 12:04:49.422 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 2.893 seconds (JVM running for 3.949)
+2019-06-25 12:04:54.335 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 12:04:54.335 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 12:04:54.347 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2019-06-25 14:06:23.415 [http-nio-9002-exec-1] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:105)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 14:08:40.096 [http-nio-9002-exec-4] INFO  c.f.backend.service.device.impl.FaceSdkServiceImpl -已经初始化过了
+2019-06-25 14:08:40.233 [http-nio-9002-exec-4] ERROR o.a.c.c.C.[.[.[/tniu-backend].[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/tniu-backend] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.face.backend.service.device.impl.FaceSdkServiceImpl.getFaceScoreInfo(FaceSdkServiceImpl.java:105)
+	at com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(FaceCompareController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-06-25 14:09:58.823 [RMI TCP Connection(134)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 14:09:58.824 [RMI TCP Connection(134)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59fd97a8: startup date [Tue Jun 25 12:04:47 CST 2019]; root of context hierarchy
+2019-06-25 14:09:58.837 [RMI TCP Connection(134)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2019-06-25 14:10:06.648 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 15300 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 14:10:06.652 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 14:10:06.680 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Tue Jun 25 14:10:06 CST 2019]; root of context hierarchy
+2019-06-25 14:10:07.778 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 14:10:07.791 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 14:10:07.805 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 14:10:07.805 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 14:10:07.815 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 14:10:07.882 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 14:10:07.883 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1204 ms
+2019-06-25 14:10:08.330 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 14:10:08.330 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 14:10:08.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 14:10:08.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 14:10:08.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 14:10:08.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 14:10:08.331 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 14:10:08.430 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 14:10:08.573 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Tue Jun 25 14:10:06 CST 2019]; root of context hierarchy
+2019-06-25 14:10:08.620 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 14:10:08.621 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 14:10:08.622 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 14:10:08.642 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 14:10:08.642 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 14:10:08.671 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 14:10:08.856 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 14:10:08.865 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 14:10:08.865 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 14:10:08.866 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 14:10:08.901 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 14:10:08.912 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 14:10:08.935 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 14:10:08.948 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 14:10:08.949 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 2.973 seconds (JVM running for 4.894)
+2019-06-25 14:10:11.689 [RMI TCP Connection(10)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 14:10:11.689 [RMI TCP Connection(10)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 14:10:11.699 [RMI TCP Connection(10)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2019-06-25 14:12:02.846 [http-nio-9002-exec-3] INFO  c.f.backend.service.device.impl.FaceSdkServiceImpl -已经初始化过了
+2019-06-25 14:13:33.640 [http-nio-9002-exec-6] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value; nested exception is com.fasterxml.jackson.core.JsonParseException: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
+ at [Source: (PushbackInputStream); line: 3, column: 89]
+2019-06-25 14:14:18.814 [http-nio-9002-exec-8] INFO  c.f.backend.service.device.impl.FaceSdkServiceImpl -已经初始化过了
+2019-06-25 14:15:52.595 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 14:15:52.595 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Tue Jun 25 14:10:06 CST 2019]; root of context hierarchy
+2019-06-25 14:15:52.599 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2019-06-25 14:16:02.485 [main] INFO  com.face.backend.FaceBackendApplication -Starting FaceBackendApplication on DESKTOP with PID 16636 (D:\faceSrvBackEnd\backend\target\classes started by Admin in D:\faceSrvBackEnd\backend)
+2019-06-25 14:16:02.487 [main] INFO  com.face.backend.FaceBackendApplication -No active profile set, falling back to default profiles: default
+2019-06-25 14:16:02.510 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Tue Jun 25 14:16:02 CST 2019]; root of context hierarchy
+2019-06-25 14:16:03.101 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 9002 (http)
+2019-06-25 14:16:03.106 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-9002"]
+2019-06-25 14:16:03.110 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2019-06-25 14:16:03.110 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.32
+2019-06-25 14:16:03.112 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_131\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\PuTTY\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;D:\software\spring-tool-suite-4-4.2.0.RELEASE-e4.11.0-win32.win32.x86_64\sts-4.2.0.RELEASE;;.]
+2019-06-25 14:16:03.151 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring embedded WebApplicationContext
+2019-06-25 14:16:03.151 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 641 ms
+2019-06-25 14:16:03.419 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-25 14:16:03.419 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-06-25 14:16:03.419 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-25 14:16:03.419 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-25 14:16:03.419 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-25 14:16:03.419 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'httpTraceFilter' to: [/*]
+2019-06-25 14:16:03.420 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2019-06-25 14:16:03.472 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 14:16:03.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Tue Jun 25 14:16:02 CST 2019]; root of context hierarchy
+2019-06-25 14:16:03.580 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/face/api/v1/compare],methods=[POST]}" onto public com.face.backend.pojo.ResultObject<com.face.backend.pojo.ScoreInfo> com.face.backend.controller.faceCompare.FaceCompareController.deviceRegister(java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 14:16:03.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-25 14:16:03.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 14:16:03.596 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 14:16:03.596 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-25 14:16:03.624 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping -Adding welcome page: class path resource [static/index.html]
+2019-06-25 14:16:03.725 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver -Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-06-25 14:16:03.730 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 14:16:03.730 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-06-25 14:16:03.730 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-25 14:16:03.755 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2019-06-25 14:16:03.765 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-9002"]
+2019-06-25 14:16:03.770 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2019-06-25 14:16:03.777 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 9002 (http) with context path '/tniu-backend'
+2019-06-25 14:16:03.778 [main] INFO  com.face.backend.FaceBackendApplication -Started FaceBackendApplication in 1.477 seconds (JVM running for 1.835)
+2019-06-25 14:16:04.265 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/tniu-backend] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-25 14:16:04.266 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-25 14:16:04.272 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2019-06-25 14:22:40.963 [http-nio-9002-exec-5] INFO  c.f.backend.service.device.impl.FaceSdkServiceImpl -已经初始化过了
+2019-06-25 14:22:46.848 [http-nio-9002-exec-6] INFO  c.f.backend.service.device.impl.FaceSdkServiceImpl -已经初始化过了
+2019-06-25 14:24:32.088 [http-nio-9002-exec-10] INFO  c.f.backend.service.device.impl.FaceSdkServiceImpl -已经初始化过了
+2019-06-25 14:25:13.400 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested.
+2019-06-25 14:25:13.400 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Tue Jun 25 14:16:02 CST 2019]; root of context hierarchy
+2019-06-25 14:25:13.402 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
